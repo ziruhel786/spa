@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('bootstrap.css');
+@import url('material-design-iconic-font.min.css');
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 350ms ease-in;
+    -moz-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+}
+
+*, :active, :focus {
+    outline: 0 !important;;
+}
+
+body {
+    color: #4d4d4d;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 850ms;
+    -moz-animation-duration: 850ms;
+    animation-duration: 850ms;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.01s;
+    -moz-animation-delay: 0.01s;
+    animation-delay: 0.01s;
+}
+
+i {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.centerthing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.x-overflow {
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Bootstrap Modal shifting problem solve */
+
+body {
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+.modal {
+    overflow-y: auto !important;
+}
+
+.modal-open {
+    overflow: auto !important;
+}
+
+.modal-open[style] {
+    padding-right: 0 !important;
+}
+
+/*   end */
+
+/* Copyright sendinghug.com : MD ZAHIDUL ISLAM | www.ziruhel.cf || ruhelzahidul@gmail.com*/
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+}
+
+/* Material ripple effect */
+.ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #f6f6f6;
+    animation-name: ripple-animation;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes ripple-animation {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes ripple-animation {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-animation {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt45 {
+    margin-top: 45px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.ml60 {
+    margin-left: 60px;
+}
+
+.mr60 {
+    margin-right: 60px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.em25 {
+    font-size: 2.5em;
+}
+
+.em2 {
+    font-size: 2em;
+}
+
+.lh2 {
+    line-height: 2em;
+}
+
+.lh15 {
+    line-height: 1.5em;
+}
+
+.ptb0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.pr5 {
+    padding-right: 5px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.w50 {
+    width: 50%;
+    display: inline-block;
+    margin-right: -3px;
+    margin-bottom: -4px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-size: 1.25em !important;
+}
+
+/* styles */
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -600px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: -42px;
+    }
+}
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+.employee.offline{
+    opacity: 0.65;
+}
+.employee.online{
+    opacity: 1;
+}
+.profile-card {
+    position: relative;
+    animation: animatop 0.65s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 0;
+    background-color: white;
+    overflow: hidden;
+   /* box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);*/
+}
+.offline > .profile-card::after, .online > .profile-card::before {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 300px;
+    background-color: #b4b8be;
+    position: absolute;
+    animation: rotatemagic 0.65s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.65s both;
+}
+.online > .profile-card::before,
+.online > .profile-card .status:after{
+    background-color: #2ecc71;
+}
+.profile-card > img {
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.profile-info {
+    padding: 0 20px;
+    display: inline-block;
+    width: calc(100% - 160px);
+    min-width: 150px;
+    position: relative;
+    z-index: 2;
+}
+.profile-info h4{
+    font-weight: 600;
+}
+.profile-info h5{
+    color: #b4b8be;
+}
+.status{
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.status:after {
+    content: '';
+    background-color: #b4b8be;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 1px;
+    border-radius: 50%;
+    left: 0
+}
