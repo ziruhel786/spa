@@ -135,7 +135,39 @@ body {
     width: 100%;
     max-width: 1366px;
 }
-
+header{
+    border-bottom: 1px solid #f9f9f9;
+}
+.landing-logo{
+    line-height: 66px;
+}
+.landing-logo img{
+    max-height: 66px;
+    padding: 3px 0;
+}
+.header-menu{
+    padding: 14px 0 !important;
+}
+.spa-nav, .spa-nav li{
+    display: inline-block;
+}
+.spa-nav li a{
+    color: rgb(77, 77, 77);
+    margin: 0 10px;
+}
+.spa-nav li a:hover,
+.spa-nav li a:focus {
+    color: #000000;
+    background-color: transparent;
+}
+.spa-nav li.active a {
+    border: 1px solid #f9f9f9;
+    color: #000000;
+}
+.spa-nav li.active a:hover,
+.spa-nav li.active a:focus {
+    background-color: #f9f9f9;
+}
 /* Material ripple effect */
 .ripple {
     overflow: hidden;
@@ -379,4 +411,30 @@ i {
     top: 1px;
     border-radius: 50%;
     left: 0
+}
+.copyright {
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-top: 3.5em;
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 75px;
+    right: 40px;
+    display: none;
+    z-index: 99999;
+    color: #4d4d4d;
+    font-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 3px;
+   /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07), 0px 1px 18px 0px rgba(0, 0, 0, 0.06), 0px 3px 5px -1px rgba(0, 0, 0, 0.1);*/
 }

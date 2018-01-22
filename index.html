@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/r.png">
+    <link rel="icon" href="images/icon.jpg">
     <title>Spa</title>
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -13,13 +13,36 @@
     <![endif]-->
 </head>
 <body>
-<header>
-
+<header class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="landing-logo" href="index.html">
+                    <img src="images/r.png">
+                </a>
+                <button class="navbar-toggle btn-menu" data-target=".header-menu" data-toggle="collapse" type="button">
+                    <i class="zmdi zmdi-menu"></i>
+                </button>
+                <div class="navbar-collapse header-menu collapse  pull-right">
+                    <ul class="nav spa-nav">
+                        <li><a href="javascript:;">About us</a></li>
+                        <li><a href="javascript:;">Features</a></li>
+                        <li><a href="javascript:;">Plans</a></li>
+                        <li class="fade-in two active"><a href="javascript:;">Employee</a></li>
+                        <li class="fade-in two"><a href="javascript:;">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <section class="banner fade-in one">
     <div class="container-fluid">
         <div class="row">
+            <!--<div class="col-xs-12">
+                <h3>105 employees in record</h3>
+            </div>-->
             <div class="col-md-4 col-sm-6">
                 <div class="employee online">
                     <div class="profile-card">
@@ -45,7 +68,7 @@
                             <h4>Zahidul Islam</h4>
                             <h5>Front End Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -61,40 +84,6 @@
                         <div class="profile-info">
                             <h4>Reazul Islam</h4>
                             <h5>Web Developer</h5>
-                            <div class="in-time">
-                                <div>Last Login:  10:00 AM</div>
-                            </div>
-                            <div class="status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="employee offline">
-                    <div class="profile-card">
-                        <img src="images/4.jpg" alt="" class="img-circle img-responsive">
-                        <div class="profile-info">
-                            <h4>Imran Hasan</h4>
-                            <h5>Angular Developer</h5>
-                            <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
-                            </div>
-                            <div class="status">
-                                Offline
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="employee online">
-                    <div class="profile-card">
-                        <img src="images/1.jpg" alt="" class="img-circle img-responsive">
-                        <div class="profile-info">
-                            <h4>Jonathon Weak</h4>
-                            <h5>CEO Ninja</h5>
                             <div class="in-time">
                                 <div>Last Login: 10:00 AM</div>
                             </div>
@@ -108,46 +97,12 @@
             <div class="col-md-4 col-sm-6">
                 <div class="employee offline">
                     <div class="profile-card">
-                        <img src="images/2.jpg" alt="" class="img-circle img-responsive">
-                        <div class="profile-info">
-                            <h4>Zahidul Islam</h4>
-                            <h5>Front End Developer</h5>
-                            <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
-                            </div>
-                            <div class="status">
-                                Offline
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="employee online">
-                    <div class="profile-card">
-                        <img src="images/3.jpg" alt="" class="img-circle img-responsive">
-                        <div class="profile-info">
-                            <h4>Reazul Islam</h4>
-                            <h5>Web Developer</h5>
-                            <div class="in-time">
-                                <div>Last Login:  10:00 AM</div>
-                            </div>
-                            <div class="status">
-                                Online
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="employee offline">
-                    <div class="profile-card">
                         <img src="images/4.jpg" alt="" class="img-circle img-responsive">
                         <div class="profile-info">
                             <h4>Imran Hasan</h4>
                             <h5>Angular Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -181,7 +136,7 @@
                             <h4>Zahidul Islam</h4>
                             <h5>Front End Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -198,7 +153,7 @@
                             <h4>Reazul Islam</h4>
                             <h5>Web Developer</h5>
                             <div class="in-time">
-                                <div>Last Login:  10:00 AM</div>
+                                <div>Last Login: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Online
@@ -215,7 +170,7 @@
                             <h4>Imran Hasan</h4>
                             <h5>Angular Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -249,7 +204,7 @@
                             <h4>Zahidul Islam</h4>
                             <h5>Front End Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -266,7 +221,7 @@
                             <h4>Reazul Islam</h4>
                             <h5>Web Developer</h5>
                             <div class="in-time">
-                                <div>Last Login:  10:00 AM</div>
+                                <div>Last Login: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Online
@@ -283,7 +238,7 @@
                             <h4>Imran Hasan</h4>
                             <h5>Angular Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -317,7 +272,7 @@
                             <h4>Zahidul Islam</h4>
                             <h5>Front End Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -334,7 +289,7 @@
                             <h4>Reazul Islam</h4>
                             <h5>Web Developer</h5>
                             <div class="in-time">
-                                <div>Last Login:  10:00 AM</div>
+                                <div>Last Login: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Online
@@ -351,7 +306,75 @@
                             <h4>Imran Hasan</h4>
                             <h5>Angular Developer</h5>
                             <div class="in-time">
-                                <div>Logout:  10:00 AM</div>
+                                <div>Logout: 10:00 AM</div>
+                            </div>
+                            <div class="status">
+                                Offline
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="employee online">
+                    <div class="profile-card">
+                        <img src="images/1.jpg" alt="" class="img-circle img-responsive">
+                        <div class="profile-info">
+                            <h4>Jonathon Weak</h4>
+                            <h5>CEO Ninja</h5>
+                            <div class="in-time">
+                                <div>Last Login: 10:00 AM</div>
+                            </div>
+                            <div class="status">
+                                Online
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="employee offline">
+                    <div class="profile-card">
+                        <img src="images/2.jpg" alt="" class="img-circle img-responsive">
+                        <div class="profile-info">
+                            <h4>Zahidul Islam</h4>
+                            <h5>Front End Developer</h5>
+                            <div class="in-time">
+                                <div>Logout: 10:00 AM</div>
+                            </div>
+                            <div class="status">
+                                Offline
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="employee online">
+                    <div class="profile-card">
+                        <img src="images/3.jpg" alt="" class="img-circle img-responsive">
+                        <div class="profile-info">
+                            <h4>Reazul Islam</h4>
+                            <h5>Web Developer</h5>
+                            <div class="in-time">
+                                <div>Last Login: 10:00 AM</div>
+                            </div>
+                            <div class="status">
+                                Online
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="employee offline">
+                    <div class="profile-card">
+                        <img src="images/4.jpg" alt="" class="img-circle img-responsive">
+                        <div class="profile-info">
+                            <h4>Imran Hasan</h4>
+                            <h5>Angular Developer</h5>
+                            <div class="in-time">
+                                <div>Logout: 10:00 AM</div>
                             </div>
                             <div class="status">
                                 Offline
@@ -363,6 +386,11 @@
         </div>
     </div>
 </section>
+<footer class="fade-in one">
+    <div class="copyright">
+        © 2018 OOG Company Inc Corporation Ltd.
+    </div>
+</footer>
 
 <a href="#" class="scrollToTop" id="hero-arrow">&#8682;</a>
 
