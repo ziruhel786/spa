@@ -147,12 +147,22 @@ header{
 .top{
     margin-top: 66px;
 }
+.top.two{
+    margin-top: 75px;
+}
 .landing-logo{
     line-height: 66px;
 }
 .landing-logo img{
     max-height: 66px;
     padding: 3px 0;
+}
+.landing-logo.two{
+    line-height: 70px;
+}
+.landing-logo img{
+    max-height: 70px;
+    padding: 5px 0;
 }
 .header-menu{
     padding: 14px 0 !important;
