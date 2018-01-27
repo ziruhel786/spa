@@ -392,7 +392,7 @@ i {
     animation: rotatemagic 0.65s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.65s both;
 }
 .online > .profile-card::before,
-.online > .profile-card .status:after{
+.online .status:after{
     background-color: #2ecc71;
 }
 .profile-card > img {
@@ -573,8 +573,23 @@ h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 0.6em;
     margin-bottom: 0.5em;
 }
+.guest{
+    padding-bottom: 30px;
+}
+.guest .profile-card{
+    padding: 0;
+}
+.guest .profile-card:before{
+    display: none;
+}
+.guest .status{
+    margin-top: 0;
+}
 
 @media (max-width: 1250px){
+    h3, .h3 {
+        font-size: 20px;
+    }
     h4, .h4 {
         font-size: 16px;
     }
@@ -589,6 +604,9 @@ h4, .h4, h5, .h5, h6, .h6 {
     }
 }
 @media (max-width: 768px){
+    h3, .h3 {
+        font-size: 18px;
+    }
     html {
         font-size: 14px;
     }
@@ -656,5 +674,8 @@ h4, .h4, h5, .h5, h6, .h6 {
 @media (max-width: 400px){
     .hidden-xxs{
         display: none;
+    }
+    .col-xxs-6{
+        width: 50%;
     }
 }
