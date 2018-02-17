@@ -1,6 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');*/
 @import url('bootstrap.css');
 @import url('material-design-iconic-font.min.css');
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 *, :after, :before {
     margin: 0;
