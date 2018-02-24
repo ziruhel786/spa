@@ -720,3 +720,26 @@ h4, .h4, h5, .h5, h6, .h6 {
         width: 50%;
     }
 }
+.v2 .profile-card{
+    text-align: center;
+    padding-left: 0;
+}
+.v2 .profile-info {
+    padding-left: 0;
+}
+.v2 .offline > .profile-card::after, .v2 .online > .profile-card::before {
+    animation: rotatemagic2 0.65s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.65s both;
+}
+@keyframes rotatemagic2 {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -130px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(50deg);
+        top: -130px;
+        left: -100px;
+    }
+}
